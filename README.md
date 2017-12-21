@@ -1,2 +1,3 @@
-# q_sharp_bell_state
-Q# Bell State Program
+# Quantum Computing - Q# Bell State Program
+
+Sample program to create [Bell State](https://en.wikipedia.org/wiki/Bell_state) in Q# language.
