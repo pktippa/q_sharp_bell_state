@@ -11,6 +11,7 @@
 
             if (desired != current)
             {
+				// X gate flips the state of Qubit
                 X(q1);
             }
             
@@ -27,8 +28,19 @@
                 for (test in 1..count)
                 {
                     Set (initial, qubits[0]);
+					
+					// Try to flip it
+					// X(qubits[0]);
 
-                    let res = M (qubits[0]);
+					// Try to get Quantum Result by setting Hadamard gate
+					H(qubits[0]);
+
+					// Output, may vary every time we build and run
+					// This is known as superposition.
+					// Init:Zero 0s=484  1s=516
+					// Init:One  0s=522  1s=478
+                    
+					let res = M (qubits[0]);
 
                     // Count the number of ones we saw:
                     if (res == One)
